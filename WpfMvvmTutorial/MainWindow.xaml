@@ -40,6 +40,18 @@
                     <DataGridTextColumn Header="Name" Binding="{Binding Quantity}" Width="2*"/>
                 </DataGrid.Columns>
             </DataGrid>
+            <!--<ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}"
+                     Grid.Column="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding Name}"/>
+                            <Label Content="{Binding SerialNumber}"/>
+                            <Label Content="{Binding Quantity}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>-->
             <Grid Grid.Column="1" Background="LightGray" >
                 
                     <Grid.ColumnDefinitions>

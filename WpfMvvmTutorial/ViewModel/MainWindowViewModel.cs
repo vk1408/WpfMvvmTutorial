@@ -28,13 +28,13 @@ namespace WpfMvvmTutorial.ViewModel
 
         }
 
-        private Item selectedItem;
+        private Item _selectedItem;
         public Item SelectedItem
         { 
-            get { return selectedItem; } 
+            get => _selectedItem;  
             set 
             { 
-                selectedItem = value;
+                _selectedItem = value;
                 OnPropertyChanged();
             } 
         }
@@ -61,7 +61,7 @@ namespace WpfMvvmTutorial.ViewModel
 
         private void DeleteItem()
         {
-            Items.Remove(selectedItem);
+            Items.Remove(_selectedItem);
         }
 
         private void Save()
